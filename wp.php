@@ -51,7 +51,8 @@ if ($page==1)
 
 else if ($page==2)
 {
-	$zip = new ZipArchive; $res = $zip->open('wp.zip'); 
+	$zip = new ZipArchive; 
+	$res = $zip->open('wp.zip'); 
 	if ($res === TRUE) 
 		{
 			$zip->extractTo($root); 
