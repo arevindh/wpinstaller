@@ -1,8 +1,9 @@
 <?php
 /* Wordpress Easy Instaler */
-/* Version 0.8b */
-/* Coded By Siddhu arevindh
-lab.arevindh.com 
+/* Version 0.8 beta */
+/* 
+Coded By Siddhu arevindh
+http://lab.arevindh.com/
 Email : siddhu@arevindh.com
 */
 
@@ -22,7 +23,7 @@ else
 
 {     
          echo "<h2> Wordpress Easy Install </h2> <br />";
-   echo "<a href='wp.php?step=1'> Proceed with Install </a>";
+	 echo "<a href='wp.php?step=1'> Proceed with Install </a>";
 	 echo " <br /> <br /> <br /> Script By <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a>";
 }
 
@@ -58,7 +59,7 @@ else if ($page==2)
 /* process file */
 
 else if ($page==3)
-
+ 
 {
   recurse_copy($source,$destination);
   echo "Success <br /> Click Next to Delete Temp File and this script";
@@ -71,15 +72,15 @@ else if ($page==4)
 {
 
 
-
+$source=$root."/wordpress";
 unlink('wp.zip');
-echo "<br /> Temp File Removed >";
-rmdir('wordpress');
-echo "<br /> Folder Removed >";
+echo "<br /> Temp File Removed ";
+rrmdir($source);
+echo "<br /> Folder Removed ";
 unlink(__FILE__);
-echo "<br /> File Removed >";
+echo "<br /> Instal Script Removed ";
 
-echo " Done !!!!  <br /><a href='index.php'> Proceed with Database install </a>";
+echo " <br />Done !!!!  <br /><a href='index.php'> Proceed with Database install </a>";
 
 echo " <br /> <br /> <br />Script By  <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a>";
 }
@@ -99,6 +100,19 @@ function recurse_copy($src,$dst)
 		} 
 	} closedir($dir); 
 }
+
+ function rrmdir($dir) { 
+   if (is_dir($dir)) { 
+     $objects = scandir($dir); 
+     foreach ($objects as $object) { 
+       if ($object != "." && $object != "..") { 
+         if (filetype($dir."/".$object) == "dir") rrmdir($dir."/".$object); else unlink($dir."/".$object); 
+       } 
+     } 
+     reset($objects); 
+     rmdir($dir); 
+   } 
+ }
 
 
 ?>
