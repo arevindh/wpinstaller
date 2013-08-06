@@ -90,7 +90,7 @@ echo "<br /> Folder Removed ";
 unlink(__FILE__);
 echo "<br /> Instal Script Removed ";
 
-echo " <br />Done !!!! <br />  <br /><a href='index.php'> Proceed with Database install </a>";
+echo " <br />Done !!!! <br />  <br /><a href='wp-admin/setup-config.php?step=1'> Proceed with Database install </a>";
 
 echo " <br /> <br /> <br />Script By  <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a>";
 }
