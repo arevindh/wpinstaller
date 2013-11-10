@@ -109,7 +109,7 @@ else if ($page==3)
  
 {
   recurse_copy($source,$destination);
-  echo ' <h1><span class="log-in"> Success </span> <br /> <span class="sign-up"> Next to Delete Temp File and script <span> </h1>';
+  echo ' <h1><span class="log-in"> Success </span> <br /> <span class="sign-up"> Next to Delete Temp File and script <span> </h1><br />';
   echo "<b><br /><a href='wp.php?step=4'> Next Step (4) </a></b>";
 }
 
