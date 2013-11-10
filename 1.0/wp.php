@@ -1,11 +1,12 @@
-	<?php
+<?php
 /* Wordpress Easy Instaler */
-/* Version 0.8b */
+/* Version 1.0 */
 /* 
 
 Coded By Siddhu arevindh
-http://lab.arevindh.com 
+Website : http://lab.arevindh.com 
 Email : siddhu@arevindh.com
+Facebook : https://www.facebook.com/siddhu.arevindh
 
 */
 
@@ -72,7 +73,6 @@ else
 {     
          echo '<h1><span class="sign-up"> Wordpress Easy Install </span> </h1> <br />';
 	 echo "<b><br /> <br /><a href='wp.php?step=1'> Proceed with Install </a></b>";
-	 echo " <br /> <br /> <br /> Script By <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a>";
 }
 
 if ($page==1)
@@ -84,7 +84,6 @@ if ($page==1)
 	/* Unzip File */
 	echo '<h1><span class="sign-up">File Downoad Complete</span> </h1><br />';
 	echo "<br /> <br /><b> <a href='wp.php?step=2'> Next Step (2) </a> </b> ";
-	  echo " <br /> <br /> <br /> Script By  <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a>";
 
 }
 
@@ -98,8 +97,7 @@ else if ($page==2)
 			$zip->close(); 
 			echo '<h1><span class="sign-up">File Unzip Complete !<span> </h1><br />';
 			echo "<br /><b><br /><a href='wp.php?step=3'> Next Step (3) </a></b>";		
-			echo " <br /> <br /> <br /> Script By  <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a>";			
-		} 
+			} 
     
 
   	
@@ -113,7 +111,6 @@ else if ($page==3)
   recurse_copy($source,$destination);
   echo ' <h1><span class="log-in"> Success </span> <br /> <span class="sign-up"> Next to Delete Temp File and script <span> </h1>';
   echo "<b><br /><a href='wp.php?step=4'> Next Step (4) </a></b>";
-  echo " <br /> <br /> <br /> Script By  <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a>";
 }
 
 else if ($page==4)
@@ -131,7 +128,7 @@ echo "<br /> Instal Script Removed ";
 
 echo " <br />Done !!!! <br />  <br /><a href='wp-admin/setup-config.php?step=1'> Proceed with Database install </a>";
 
-echo " <br /> <br /> <br />Script By  <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a>";
+
 }
 
 
@@ -165,6 +162,9 @@ function recurse_copy($src,$dst)
 
 
 ?>
+
+<br /> <br /> <br />Script By  <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a> | <a href="http://lab.arevindh.com/wordpress-easy-installer.html" target="_blank" >Need Help ?</a>
+
 <div style="clear :both;"> </div>
 <h1> </h1> <br />
 <div style="clear :both;"> </div>
