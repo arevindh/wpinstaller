@@ -94,7 +94,7 @@ echo " <br />Done !!!! <br />  <br /><a href='wp-admin/setup-config.php?step=1'>
 
 echo " <br /> <br /> <br />Script By  <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a>";
 }
-
+ 
 
 
 function recurse_copy($src,$dst) 
