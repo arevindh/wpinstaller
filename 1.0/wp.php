@@ -4,7 +4,7 @@
 /* 
 
 Coded By Siddhu arevindh
-Website : http://lab.arevindh.com 
+Website : http://blog.arevindh.com 
 Email : siddhu@arevindh.com
 Facebook : https://www.facebook.com/siddhu.arevindh
 
@@ -163,7 +163,7 @@ function recurse_copy($src,$dst)
 
 ?>
 
-<br /> <br /> <br />Script By  <a href='http://www.arevindh.com/'> Siddhu Arevindh  </a> | <a href="http://lab.arevindh.com/wordpress-easy-installer.html" target="_blank" >Need Help ?</a>
+<br /> <br /> <br />Script By  <a href='http://blog.arevindh.com/'> Siddhu Arevindh  </a> | <a href="http://lab.arevindh.com/wordpress-easy-installer.html" target="_blank" >Need Help ?</a>
 
 <div style="clear :both;"> </div>
 <h1> </h1> <br />
