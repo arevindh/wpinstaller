@@ -19,4 +19,4 @@ I am an MCA student who is extreemly intrested in PHP and Web
 
 Siddhu Arevindh ( https://fb.com/siddhu.arevindh ) 
 
-Web : http://arevindh.com/lab/
+Web : http://blog.arevindh.com/
